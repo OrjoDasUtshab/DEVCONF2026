@@ -3,6 +3,8 @@
 }
 
 #nav-bar {
+
+
   display: flex;
   flex-wrap: wrap;
   flex-shrink: 1;
@@ -19,6 +21,8 @@ nav ul {
   gap: 40px;
   list-style: none;
   justify-content: center;
+
+
 }
 
 div nav ul li a {
@@ -27,6 +31,8 @@ div nav ul li a {
   text-decoration: none;
   color: black;
   border-radius: 15px;
+
+
 
 }
 
@@ -59,6 +65,10 @@ div nav ul li a:hover {
   color: rgb(67, 5, 253);
 }
 
+
+
+
+
 .button-Container {
   flex: 1;
   display: flex;
@@ -74,43 +84,55 @@ div nav ul li a:hover {
   flex: 1;
   margin-left: 100px;
   margin-top: 10px;
+
 }
-.banner-container img{
+
+.banner-container img {
   width: 100%;
 }
-section{
-  background-image: url('./assets/banner.jpg');
- 
- height: 530px;
-  
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/banner.jpg');
+
+  height: 600px;
+
   background-position: center;
   background-repeat: no-repeat;
 
   background-size: cover;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
 
 }
-.bunner-Container{
+
+.bunner-Container {
   color: white;
   text-align: center;
-  padding-top: 40px ;
-  margin-top: 25px;
-  
-  
+  padding-top: 20px;
+  margin-top: 20px;
+
+
 }
-.h1-font{
+
+.h1-font {
   font-size: 75px;
-  font-weight:bold; 
-  font-family:sans-serif;
+  font-weight: bold;
+  font-family: sans-serif;
   margin-bottom: 0%;
   margin-top: 80px;
-  
+
 }
-#banner-text-p{
-  
+
+#banner-text-p {
+
   font-size: 25px;
 }
-.secoend-button{
-  margin-top: 170px;
+
+.secoend-button {
+
   height: 60px;
   width: 270px;
+  margin-top: 140px;
+
 }
