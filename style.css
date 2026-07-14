@@ -75,3 +75,42 @@ div nav ul li a:hover {
   margin-left: 100px;
   margin-top: 10px;
 }
+.banner-container img{
+  width: 100%;
+}
+section{
+  background-image: url('./assets/banner.jpg');
+ 
+ height: 530px;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+}
+.bunner-Container{
+  color: white;
+  text-align: center;
+  padding-top: 40px ;
+  margin-top: 25px;
+  
+  
+}
+.h1-font{
+  font-size: 75px;
+  font-weight:bold; 
+  font-family:sans-serif;
+  margin-bottom: 0%;
+  margin-top: 80px;
+  
+}
+#banner-text-p{
+  
+  font-size: 25px;
+}
+.secoend-button{
+  margin-top: 170px;
+  height: 60px;
+  width: 270px;
+}
