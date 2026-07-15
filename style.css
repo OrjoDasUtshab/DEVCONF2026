@@ -288,7 +288,7 @@ div nav ul li a:hover {
 
 
 
-/* Placeholder Section -Ai Challenge */
+/* Placeholder Section -Ai Challenge------------------------------------ */
 
 
 .ai-section{
@@ -412,47 +412,92 @@ div nav ul li a:hover {
   color: #475569;
 }
 
-/* ---- নিচের অংশ: Sponsors ---- */
+.flag-img{
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
 .sponsors-wrap{
   margin-top: 50px;
 }
 
 .sponsors-label{
-  color: gray;
-  font-size: 0.95rem;
-  margin-bottom: 20px;
+  color: #64748b;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  position: relative;
+  display: inline-block;
+}
+
+.sponsors-label::before,
+.sponsors-label::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 1px;
+  background-color: #cbd5e1;
+}
+
+.sponsors-label::before{
+  left: -55px;
+}
+
+.sponsors-label::after{
+  right: -55px;
 }
 
 .sponsors-grid{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  max-width: 1000px;
+  gap: 30px;
+  max-width: 1050px;
   margin: 0 auto;
 }
 
 .sponsor-box{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: white;
-  border: 1px solid #e2e2e2;
-  border-radius: 10px;
-  padding: 18px 30px;
-  font-weight: bold;
-  font-size: 1rem;
-  color: #475569;
-  letter-spacing: 0.5px;
-  filter: grayscale(100%);
-  opacity: 0.7;
-  transition: all 0.3s;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  min-width: 160px;
+  min-height: 100px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  opacity: 0.75;
+  transition: all 0.35s ease;
+  height: 100px;
+}
+
+.sponsor-box img{
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: fill;
 }
 
 .sponsor-box:hover{
   filter: grayscale(0%);
   opacity: 1;
   border-color: #3b5bfd;
-  color: #3b5bfd;
-  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(59, 91, 253, 0.25);
+  transform: translateY(-8px) scale(1.05);
 }
+
 
 .footer-section{
   display: flex;
