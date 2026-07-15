@@ -285,3 +285,198 @@ div nav ul li a:hover {
 .price-card-highlight:hover {
   background-color: #003ef6;
 }
+
+
+
+/* Placeholder Section -Ai Challenge */
+
+
+.ai-section{
+  background-color: #f8f9fc;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ai-heading{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.ai-subheading{
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* ---- উপরের অংশ: map + flag পাশাপাশি ---- */
+.ai-top-grid{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* Map */
+.map-container{
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.map-img{
+  width: 100%;
+  display: block;
+}
+
+.map-pin{
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.pin-dot{
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-color: #3b5bfd;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 4px rgba(59, 91, 253, 0.3);
+  cursor: pointer;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+  0% { box-shadow: 0 0 0 0 rgba(59, 91, 253, 0.5); }
+  70% { box-shadow: 0 0 0 10px rgba(59, 91, 253, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 91, 253, 0); }
+}
+
+.pin-tooltip{
+  position: absolute;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #0f172a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s;
+}
+
+.map-pin:hover .pin-tooltip{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Flag box (ডান পাশ) */
+.flag-container{
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+}
+
+.flag-heading{
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #334155;
+}
+
+.flag-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.flag-item{
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  padding: 12px 5px;
+}
+
+.flag-emoji{
+  font-size: 1.8rem;
+  display: block;
+}
+
+.flag-item p{
+  font-size: 0.75rem;
+  margin-top: 5px;
+  color: #475569;
+}
+
+/* ---- নিচের অংশ: Sponsors ---- */
+.sponsors-wrap{
+  margin-top: 50px;
+}
+
+.sponsors-label{
+  color: gray;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.sponsors-grid{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sponsor-box{
+  background-color: white;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 18px 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #475569;
+  letter-spacing: 0.5px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.sponsor-box:hover{
+  filter: grayscale(0%);
+  opacity: 1;
+  border-color: #3b5bfd;
+  color: #3b5bfd;
+  transform: translateY(-4px);
+}
+
+.footer-section{
+  display: flex;
+  height: 70px;
+  align-items: center;
+  background-color: #0D1B2A;
+  color: #FFFFFF;
+  
+}
+#footer-h1{
+  flex: 1;
+  margin-left: 50px;
+
+}
+#footer-h2{
+  flex: 1;
+  display: flex;
+  justify-content: end;
+
+
+}
+#footer-h2 p{
+  gap: 100px;
+  margin-right: 60px;
+
+
+}
